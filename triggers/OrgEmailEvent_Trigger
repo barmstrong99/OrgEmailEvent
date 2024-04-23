@@ -1,0 +1,18 @@
+/**
+ * This trigger handles the email event.  Sends an email with the information in the event.
+ */
+trigger OrgEmailEvent_Trigger on Org_Email_Event__e (after insert) {
+
+    try {
+        OrgEmailEvent_Helper helper = new OrgEmailEvent_Helper();
+        helper.ProcessEmailEvents(Trigger.New);
+    }
+    catch(Exception e) {
+        String s = 'Exception thrown in OrgEmailEvent_Trigger' +
+            ', Message: ' + e.getMessage() +
+            ', Line Number: ' + e.getLineNumber() +
+            ', Stack Trace: ' + e.getStackTraceString();
+        System.debug(s);
+    }
+
+}

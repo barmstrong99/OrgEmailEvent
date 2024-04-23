@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Org Email Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Org Email Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Body --></label>
+        <name>Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Addresses --></label>
+        <name>From_Addresses__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTML Body --></label>
+        <name>HTML_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Addresses --></label>
+        <name>To_Addresses__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
